@@ -1,4 +1,5 @@
 import { Input } from '@/components/ui/input';
+import { InputTags } from '@/components/ui/input-tags';
 import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
 import type { FieldFC } from '../type';
 
@@ -26,7 +27,12 @@ const FieldText: FieldFC<{}> = (props, ref) => {
     return <>{dom}</>;
   }
 
-  const dom = <Input ref={refInput} {...fieldProps} {...restProps} />;
+  const dom =
+    fieldProps?.mode === 'multiple' ? (
+      <InputTags ref={refInput} {...fieldProps} {...restProps} />
+    ) : (
+      <Input ref={refInput} {...fieldProps} {...restProps} />
+    );
 
   if (renderFormItem) {
     return <>{renderFormItem(restProps?.value, { ...fieldProps }, dom)}</>;
