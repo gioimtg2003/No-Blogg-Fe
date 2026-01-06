@@ -10,8 +10,6 @@
   font-family: var(--font-sfpro);
 }
 
-
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -52,6 +50,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --font-sfpro: var(--font-sfpro);
+  --color-in-active: var(--in-active);
 }
 
 :root {
@@ -88,8 +87,8 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --nav-link: #5f5e5b;
-
-  --prefixCls: 'no-blogg'
+  --in-active: #a19e99;
+  --prefixCls: 'no-blogg';
 }
 
 .dark {
@@ -124,6 +123,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --in-active: #f3f3f3;
 }
 
 @layer base {
