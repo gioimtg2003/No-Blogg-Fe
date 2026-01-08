@@ -27,7 +27,7 @@ export function LoginForm({
     resolver: zodResolver(LoginSchema),
     mode: 'onSubmit',
     defaultValues: {
-      username: '',
+      email: '',
       password: '',
     },
   });
@@ -70,9 +70,9 @@ export function LoginForm({
                 <div className='grid gap-3'>
                   <InputForm
                     control={methods.control}
-                    name='username'
-                    label='Username'
-                    placeholder={'example'}
+                    name='email'
+                    label='Email'
+                    placeholder={'example@example.com'}
                   />
                 </div>
                 <div className='grid gap-3'>
