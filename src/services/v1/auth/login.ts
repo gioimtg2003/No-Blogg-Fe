@@ -4,7 +4,7 @@ import { useMutation } from '@tanstack/react-query';
 import endpoint from './endpoint';
 
 export interface LoginRequest {
-  username: string;
+  email: string;
   password: string;
 }
 

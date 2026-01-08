@@ -228,7 +228,7 @@ export default function FormItem(props: FormItemProps) {
                 rootStyle={rootStyle}
               >
                 <WrapperFormField {...propsWrapperFormItem}>
-                  <div className='form-item-control max-w-full'>
+                  <div className='form-item-control flex-auto max-w-full'>
                     {children(props)}
                     {error && (
                       <p className='mt-1 truncate text-xs text-red-500'>

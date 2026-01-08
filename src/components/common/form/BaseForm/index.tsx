@@ -108,6 +108,7 @@ function Form<Schema extends FieldValues = {}>(
   );
 }
 
+Form.displayName = 'BaseForm';
 export default forwardRef(Form) as <Schema extends FieldValues = {}>(
   props: BaseFormProps<Schema> & {
     ref?: React.Ref<BaseGFormRef<Schema>>;

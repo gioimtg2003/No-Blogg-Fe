@@ -18,7 +18,7 @@ const RoleTabContent = () => {
         </DialogContent>
       </Dialog>
       <div className='w-full flex justify-between items-center mb-4'>
-        <h2 className='text-lg font-medium font-sfpro'>Roles Management</h2>
+        <h2 className='text-base font-medium font-sfpro'>Roles Management</h2>
         <Button
           variant='default'
           size='sm'
